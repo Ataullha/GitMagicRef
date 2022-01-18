@@ -1,0 +1,85 @@
+LOCAL
+WORKING DIRECTORY           -(add)-       stage           -(commit)-          LOCAL 
+                                                                              REPOSITORY                -(pull)       -       REMOTE
+                                                                                                                              REPOSITORY
+                                                                                                                              
+                                                                                                                              
+  git init
+  // for initialize any local repository
+  
+  git clone https://....
+  // for cloning any existing or other repository from github to your own local machine
+  
+  git status
+  // current status for your git local repository
+  
+  git add --all / git add --A
+  // add every file we create or modify in the git local repository we make
+  
+  git add .
+  // add(with .) everything under the current directory of the file we are working or we clone from the remote repository
+  
+  git reset
+  // reset all progress we stages(Note)/commited at our local repository
+  
+  git add *
+  // only add not deleted file to the stage
+  
+  git add *.file_extension
+  // only add not deleted file with the specific file extension to the stage
+  
+  git commit -m "message"
+  // commit those add to the local git repository
+  
+  git reset HEAD~ 
+  // reset after commit but not deleted file
+  
+ git reset --hard
+ // reset everything to the past stage after commit
+ 
+ git rm [a_file (file_name.file_extension)]
+ // remove the file from the folder and also stage the folder where manual delete don't do that
+ 
+ /**
+ but if we modify any file then it's not possible to remove it using git rm two.txt it won't let us do it untill we commit the modified version then we have to
+ use force remove 
+**/
+
+git rm [a_file] -f 
+// for force remove
+
+git rm --cached two.txt
+// delete it from local git repository storage(stage) but not delete it from the local storage 
+
+git rm -r [folder_name]
+// recursively delete everything at that folder
+
+git branch
+// show the branches at the repository
+
+/**
+ * means we are now at that repository
+**/
+
+git branch [branch_name]
+// add a new branch to the local repo
+
+git checkout [branch_name]
+// for going to another git branch from a branch
+
+/**
+  the git folder also control the visibility from branch to branch if we are in a branch call 'a' then if there has three files 1,2,3 
+  and if we don't merge it and **commit it** then if we switch anotehr branch 'b' where there is no file we can't see those 1,2,3 files before we do any type
+  of merge from the 'a' branch to the b or main(here we need to create the 'b' branch after merging 'a' to main) ... :)
+**/
+
+git merge [branch_name]
+// for mergeing the branch we are now to the [branch_name] we want
+
+git push origin [branch_name]
+// for pushing from local to the remote repository
+
+push =  local repository to remote repository
+fetch = for fetching but not get those files locally 
+pull = fetch + merge for pulling that means basically fetching and merging data and make them store and visible in the local repository
+
