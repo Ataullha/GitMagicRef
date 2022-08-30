@@ -82,6 +82,9 @@ git push origin [branch_name]
 git remote add origin [repository_link]
 // for link the github repository into local repository
 
+git push origin [branch_name] --force
+// all previous work will be destroyed **
+
 push =  local repository to remote repository
 fetch = for fetching but not get those files locally 
 pull = fetch + merge for pulling that means basically fetching and merging data and make them store and visible in the local repository
