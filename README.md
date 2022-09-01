@@ -27,7 +27,8 @@ WORKING DIRECTORY
                                                         LOCAL 
                                                         REPOSITORY                
                                                                  -       (pull)       -       
-                                                                                      REMOTE REPOSITORY
+                                                                                      REMOTE 
+                                                                                      REPOSITORY
                                                                                        
 </pre>
 
