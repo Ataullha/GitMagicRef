@@ -19,14 +19,15 @@ How It Works
 <pre>
 
 
-LOCAL WORKING DIRECTORY           
-                      -     (add)     -       
-                                      stage           
-                                          -       (commit)    -          
-                                                              LOCAL 
-                                                              REPOSITORY                
-                                                                        -       (pull)       -       
-                                                                                             REMOTE REPOSITORY
+LOCAL 
+WORKING DIRECTORY           
+                -     (add)     -       
+                                stage           
+                                    -       (commit)    -          
+                                                        LOCAL 
+                                                        REPOSITORY                
+                                                                 -       (pull)       -       
+                                                                                      REMOTE REPOSITORY
                                                                                        
 </pre>
 
